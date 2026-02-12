@@ -13,7 +13,7 @@ function YearEventGen() {
     DayEvents = []
     EventCalc = 0
     for (let i = 0; i < 100; i++) {
-    EventDayGen();
+    EventDayGen(DayGen);
     DayGen = DayGen + 1
   }
   document.getElementById("DebugArray").innerHTML = DayEvents;

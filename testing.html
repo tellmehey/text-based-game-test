@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testing</title>
+<h1>testing</h1>
+</head>
+<body>
+<p id="text">num1</p>
+<script src="scripts.js"></script>
+<script src="dynamic-buttons.js"></script>
+<script>
+function EnableButtonId(Id,Text) {
+    button = document.getElementById(Id).innerHTML;
+    button.innerHTML = Text;
+}</script>
+<p>Actions:</p>
+<button type="button" onclick="EnableButtonId(test,hello)">show</button>
+<button type="button" id="test" onclick="EnableButtonId(test,hello)">here</button>
+</body>
+</html>

@@ -18,7 +18,7 @@ function YearEventGen() {
   document.getElementById("DebugArray").innerHTML = DayEvents;
 }
 function EventDayGen() {
-    EventCalc = Math.floor(math.random()*101);
+    EventCalc = Math.floor(math.random*101);
     if (EventCalc <= 25) {
         DayEvents.push("1") // Gain Loot
     }
@@ -58,7 +58,7 @@ function ReadDay(n) {
     }
     else {
         if (n = 2) {
-            ChallengeSpawn(Math.floor( Math.random * 26 ) + 50) 
+            ChallengeSpawn(Math.floor(Math.random * 26) + 50) 
             // Base health: 50, Additional health: 0 - 25
             console.log("Enemy has spawned.")
         }

@@ -1,16 +1,3 @@
-function setnum1(num) {
-let num1= (num)
-document.getElementById("DisNum1").innerHTML = (num1);
-    }
-function calc() {
-    sum = num1 + num2
-    console.log(sum)
-    document.getElementById("report").innerHTML = (sum);
-    }
-function customset1() {
-    let num1 = prompt("Number for 1?","1")
-    document.getElementById("num1").innerHTML = (num1);
-}
 function repeatEventGen() {
     let DayGen = 0
     let DayEvents = []
@@ -24,14 +11,44 @@ function repeatEventGen() {
 function EventDayGen() {
     EventCalc = Math.floor(math.random()*101);
     if (EventCalc <= 25) {
-        DayEvents.push("Loot")
+        DayEvents.push("1") // Gain Loot
     }
     else {
         if (EventCalc >= 75) {
-            DayEvents.push("Challenged")
+            DayEvents.push("2") // Be challenged on this day
         }
         else {
-            DayEvents.push("Passive")
+            DayEvents.push("0") // Nothing happends
+        }
+    }
+}
+function ReadDay(n) {
+    if (n = 1) {
+        itemLoot = Math.floor(Math.random * 5)
+        if (itemLoot = 1) {
+            inventory.push("1") // Material (for buying items)
+        }
+        else {
+            if (itemLoot = 2) {
+                inventory.push("2") // Small Health Potion
+            }
+            else {
+                if (itemLoot = 3) {
+                    inventory.push("3") // Armor Scraps (for repairing)
+                }
+                else {
+                    inventory.push("4") // Material (for now)
+                }
+            }
+        }
+        NextDay()
+    }
+    else {
+        if (n = 2) {
+            ChallengeSpawn(Math.floor(Math.random * 26) + 50)
+        }
+        else {
+            NextDay()
         }
     }
 }

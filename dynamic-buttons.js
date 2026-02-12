@@ -1,6 +1,8 @@
 function DisableButtonId(Id) {
-    document.getElementById(Id).innerHTML = "-";
+    button = document.getElementById(Id).innerHTML;
+    button .innerHTML = "-"
 }
 function EnableButtonId(Id,Text) {
-    document.getElementById(Id).innerHTML = Text;
+    button = document.getElementById(Id).innerHTML;
+    button.innerHTML = Text;
 }

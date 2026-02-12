@@ -10,12 +10,12 @@
 <!-- <script src="dynamic-buttons.js"></script></c> -->
 <script>
 let button = 0
-function EnableButtonId(Id,Text) {
+function EnableButtonId(Id) {
     button = document.getElementById(Id).innerHTML;
-    button.innerHTML = Text;
+    button.innerHTML = "hello";
 }</script>
 <p>Actions:</p>
-<button type="button" onclick="EnableButtonId(test,hello)">show</button>
+<button type="button" onclick="EnableButtonId(test)">show</button>
 <button type="button" id="test" onclick="EnableButtonId(test,hello)">here</button>
 </body>
 </html>

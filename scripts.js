@@ -2,11 +2,15 @@ function NewBeginings() {
         let inventory = []
         let GameDay = 0
         let EnemyHealth = 50
+        let TamedHealth = 0
+        let DayGen = 0
+        let DayEvents = []
+        let EventCalc = 0
 }
 function YearEventGen() {
-    let DayGen = 0
-    let DayEvents = []
-    let EventCalc = 0
+    DayGen = 0
+    DayEvents = []
+    EventCalc = 0
     for (let i = 0; i < 100; i++) {
     EventDayGen();
     DayGen = DayGen + 1
@@ -54,7 +58,7 @@ function ReadDay(n) {
     }
     else {
         if (n = 2) {
-            ChallengeSpawn(Math.floor(Math.random * 26) + 50) 
+            ChallengeSpawn(Math.floor( Math.random * 26 ) + 50) 
             // Base health: 50, Additional health: 0 - 25
             console.log("Enemy has spawned.")
         }
@@ -75,4 +79,7 @@ function ChallengeDamage(Damage) {
     if (EnemyHealth <= 0) {
         console.log("Enemy has been slained.")
     }
+}
+function ChallengeTame() {
+    coo
 }

@@ -6,6 +6,7 @@ function NewBeginings() {
         let DayGen = 0
         let DayEvents = []
         let EventCalc = 0
+        let health = 100
 }
 function YearEventGen() {
     DayGen = 0
@@ -81,5 +82,14 @@ function ChallengeDamage(Damage) {
     }
 }
 function ChallengeTame() {
-    coo
+    // doesn't do anything yet...
+}
+function ViewInventory() {
+    // what he said up there
+}
+function ConsumePotion() {
+    health = health + 25
+    if (health > 100) {
+        health = 100
+    }
 }

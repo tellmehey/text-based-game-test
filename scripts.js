@@ -20,7 +20,7 @@ function EventDayGen() {
     }
     else {
         if (EventCalc >= 75) {
-            DayEvents.push("2") // Be challenged on this day
+            DayEvents.push("2") // Be challenged by an enemy on this day
         }
         else {
             DayEvents.push("0") // Nothing happends

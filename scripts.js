@@ -19,7 +19,7 @@ function YearEventGen() {
   document.getElementById("DebugArray").innerHTML = DayEvents;
 }
 function EventDayGen() {
-    EventCalc = Math.floor(math.random * 101);
+    EventCalc = Math.floor(Math.random * 101);
     if (EventCalc <= 25) {
         DayEvents.push("1") // Gain Loot
     }

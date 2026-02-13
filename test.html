@@ -11,9 +11,10 @@
 <p>Actions:</p>
 <button type="button" Id="ChallengeDamage" onclick="ChallengeDamage()">-</button>
 <button type="button" Id="ChallengeTame" onclick="ChallengeTame()">-</button>
-<button type="button" Id="ViewInventory" onclick="ViewInventory()">-</button>
+<p type="button" Id="ViewInventory" onclick="ViewInventory()">-</p>
 <button type="button" Id="ConsumePotion" onclick="ConsumePotion()">-</button>
 <br>
+<p onclick="getElementById('id').innerHTML=('u')">> [2]</p>
 <button type="button" onclick="NewBeginings()">Begin Now</button>
 <button type="button" onclick="EnableButtonId(ViewInventory, Inventory)">Show Inv Button</button>
 <button type="button" onclick="DisableButtonId(ViewInventory)">Hide Inv Button</button>
@@ -22,6 +23,6 @@
 <button type="button" onclick="YearEventGen()">Year Generation</button>
 <h3>DebugArray: <span id="DebugArray"></span></h3>
 <script src="scripts.js"></script>
-<script src="dynamic-buttons.js"></script>
+<script src="HideAndShow.js"></script>
 </body>
 </html>

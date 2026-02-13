@@ -22,12 +22,10 @@ function EventDayGen() {
     EventCalc = Math.floor(Math.random * 101);
     if (EventCalc <= 25) {
         DayEvents.push("1") // Gain Loot
-    }
-    else {
+    } else {
         if (EventCalc >= 75) {
             DayEvents.push("2") // Be challenged on this day
-        }
-        else {
+        } else {
             DayEvents.push("0") // Nothing happends
         }
     }
